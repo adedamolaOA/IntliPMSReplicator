@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Adedamola/Documents/NetBeansProjects/IntliPMSReplicator/src/META-INF/wsdl/localhost_8080/IntliPMSWebService/IntliPMSWebService.wsdl</file>
+            <file>file:/C:/Users/Adedamola/Documents/NetBeansProjects/IntliPMSReplicator/src/com/intlipms/controller/CustomerRoomRateController.java</file>
+            <file>file:/C:/Users/Adedamola/Documents/NetBeansProjects/IntliPMSReplicator/src/META-INF/wsdl/localhost_8080/IntliPMSWebService/IntliPMSWebService.xsd_1.xsd</file>
+            <file>file:/C:/Users/Adedamola/Documents/NetBeansProjects/IntliPMSReplicator/src/META-INF/IntliPMSWebService.xml</file>
+            <file>file:/C:/Users/Adedamola/Documents/NetBeansProjects/IntliPMSReplicator/src/com/intlipms/IntliPMSReplicator.java</file>
+            <file>file:/C:/Users/Adedamola/Documents/NetBeansProjects/IntliPMSReplicator/src/com/intlipms/controller/CompanyController.java</file>
+            <file>file:/C:/Users/Adedamola/Documents/NetBeansProjects/IntliPMSReplicator/src/com/intlipms/controller/CustomerController.java</file>
+            <file>file:/C:/Users/Adedamola/Documents/NetBeansProjects/IntliPMSReplicator/src/com/intlipms/entities/Company.java</file>
+            <file>file:/C:/Users/Adedamola/Documents/NetBeansProjects/IntliPMSReplicator/src/META-INF/jax-ws-catalog.xml</file>
+            <file>file:/C:/Users/Adedamola/Documents/NetBeansProjects/IntliPMSReplicator/src/com/intlipms/entities/Customer.java</file>
+            <file>file:/C:/Users/Adedamola/Documents/NetBeansProjects/IntliPMSReplicator/src/com/intlipms/controller/MaintenanceFundController.java</file>
+            <file>file:/C:/Users/Adedamola/Documents/NetBeansProjects/IntliPMSReplicator/src/com/intlipms/controller/MaintenanceController.java</file>
+            <file>file:/C:/Users/Adedamola/Documents/NetBeansProjects/IntliPMSReplicator/src/com/intlipms/controller/MaintenanceApprovalController.java</file>
+            <file>file:/C:/Users/Adedamola/Documents/NetBeansProjects/IntliPMSReplicator/src/META-INF/wsit-client.xml</file>
+            <file>file:/C:/Users/Adedamola/Documents/NetBeansProjects/IntliPMSReplicator/src/com/intlipms/controller/CompanyRoomRateController.java</file>
+            <file>file:/C:/Users/Adedamola/Documents/NetBeansProjects/IntliPMSReplicator/src/com/intlipms/controller/CompanyPrivilegesController.java</file>
+            <file>file:/C:/Users/Adedamola/Documents/NetBeansProjects/IntliPMSReplicator/src/META-INF/persistence.xml</file>
+            <file>file:/C:/Users/Adedamola/Documents/NetBeansProjects/IntliPMSReplicator/src/com/intlipms/controller/CompanyStaffController.java</file>
+            <file>file:/C:/Users/Adedamola/Documents/NetBeansProjects/IntliPMSReplicator/src/com/intlipms/controller/CustomerPrivilegesController.java</file>
+            <file>file:/C:/Users/Adedamola/Documents/NetBeansProjects/IntliPMSReplicator/src/com/intlipms/controller/MaintenanceCostingController.java</file>
+            <file>file:/C:/Users/Adedamola/Documents/NetBeansProjects/IntliPMSReplicator/src/com/intlipms/entities/MaintRequest.java</file>
+        </group>
+    </open-files>
+</project-private>

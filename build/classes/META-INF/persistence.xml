@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="IntliPMSReplicatorPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.intlipms.entities.EmployeeDepartmentMaster</class>
+    <class>com.intlipms.entities.Salesmenu</class>
+    <class>com.intlipms.entities.RoomInsplog</class>
+    <class>com.intlipms.entities.Checkinlog</class>
+    <class>com.intlipms.entities.Employeeaddress</class>
+    <class>com.intlipms.entities.Customer</class>
+    <class>com.intlipms.entities.RoomTypeAmenities</class>
+    <class>com.intlipms.entities.Lundaryassetlist</class>
+    <class>com.intlipms.entities.MaintRequest</class>
+    <class>com.intlipms.entities.FASoftAsset</class>
+    <class>com.intlipms.entities.Hotel</class>
+    <class>com.intlipms.entities.Inventoryactivity</class>
+    <class>com.intlipms.entities.ModuleAccess</class>
+    <class>com.intlipms.entities.CompanyRommRate</class>
+    <class>com.intlipms.entities.Inventorymaster</class>
+    <class>com.intlipms.entities.Roomcleanlog</class>
+    <class>com.intlipms.entities.CustomerAudit</class>
+    <class>com.intlipms.entities.FormItemAccess</class>
+    <class>com.intlipms.entities.LundaryInvtlog</class>
+    <class>com.intlipms.entities.BookingDtlsLog</class>
+    <class>com.intlipms.entities.Rooms</class>
+    <class>com.intlipms.entities.Employeemaster</class>
+    <class>com.intlipms.entities.UserMaster</class>
+    <class>com.intlipms.entities.PromotionType</class>
+    <class>com.intlipms.entities.CompanyStaffType</class>
+    <class>com.intlipms.entities.Menucomboitems</class>
+    <class>com.intlipms.entities.CompanyCustomer</class>
+    <class>com.intlipms.entities.Lundrycategory</class>
+    <class>com.intlipms.entities.Propertyschmaintlog</class>
+    <class>com.intlipms.entities.HotelAmenities</class>
+    <class>com.intlipms.entities.Roomassetlist</class>
+    <class>com.intlipms.entities.Customeractivitylog</class>
+    <class>com.intlipms.entities.Customerroomrate</class>
+    <class>com.intlipms.entities.Employeedebitlog</class>
+    <class>com.intlipms.entities.Company</class>
+    <class>com.intlipms.entities.EmployeeDepartmentLog</class>
+    <class>com.intlipms.entities.RoomTypeAmenity</class>
+    <class>com.intlipms.entities.CompanyRightsLevel</class>
+    <class>com.intlipms.entities.FASoftAssetAudit</class>
+    <class>com.intlipms.entities.Roomstatus</class>
+    <class>com.intlipms.entities.Employeetimeofflog</class>
+    <class>com.intlipms.entities.EmployeePhones</class>
+    <class>com.intlipms.entities.RoomType</class>
+    <class>com.intlipms.entities.CustomerPrivileges</class>
+    <class>com.intlipms.entities.UserPermissions</class>
+    <class>com.intlipms.entities.FormAccess</class>
+    <class>com.intlipms.entities.CustomeractivityType</class>
+    <class>com.intlipms.entities.Building</class>
+    <class>com.intlipms.entities.MaintFunds</class>
+    <class>com.intlipms.entities.CustomerRewards</class>
+    <class>com.intlipms.entities.MaintCosting</class>
+    <class>com.intlipms.entities.LundaryInboundlog</class>
+    <class>com.intlipms.entities.Roomcleandtlslog</class>
+    <class>com.intlipms.entities.Inventoryaudit</class>
+    <class>com.intlipms.entities.EmployeeSchedulelog</class>
+    <class>com.intlipms.entities.LundaryInvtitems</class>
+    <class>com.intlipms.entities.Propertyschmaint</class>
+    <class>com.intlipms.entities.PropertyAreas</class>
+    <class>com.intlipms.entities.Roominspectionlog</class>
+    <class>com.intlipms.entities.UserProfile</class>
+    <class>com.intlipms.entities.Roominspectiontype</class>
+    <class>com.intlipms.entities.Lundaryasset</class>
+    <class>com.intlipms.entities.MaintAproval</class>
+    <class>com.intlipms.entities.Inventoryvendors</class>
+    <class>com.intlipms.entities.PropertyItem</class>
+    <class>com.intlipms.entities.UserAccess</class>
+    <class>com.intlipms.entities.RoomAsset</class>
+    <class>com.intlipms.entities.BookingLog</class>
+    <class>com.intlipms.entities.Inventoryauditdetail</class>
+    <class>com.intlipms.entities.EmployeeDepartment</class>
+    <class>com.intlipms.entities.LundaryType</class>
+    <class>com.intlipms.entities.Salesmenudetail</class>
+    <class>com.intlipms.entities.CompanyPrivileges</class>
+    <class>com.intlipms.entities.LundaryInbound</class>
+    <class>com.intlipms.entities.RefactorLog</class>
+    <class>com.intlipms.entities.Sysdiagrams</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://192.168.0.254:1433;databaseName=IntliPMS"/>
+      <property name="javax.persistence.jdbc.user" value="keycard"/>
+      <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+      <property name="javax.persistence.jdbc.password" value="admin"/>
+    </properties>
+  </persistence-unit>
+</persistence>

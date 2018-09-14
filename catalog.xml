@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/IntliPMSWebService/IntliPMSWebService?WSDL" uri="xml-resources/web-service-references/IntliPMSWebService/wsdl/localhost_8080/IntliPMSWebService/IntliPMSWebService.wsdl"/>
+    <system systemId="http://localhost:8080/IntliPMSWebService/IntliPMSWebService?xsd=1" uri="xml-resources/web-service-references/IntliPMSWebService/wsdl/localhost_8080/IntliPMSWebService/IntliPMSWebService.xsd_1.xsd"/>
+    <system systemId="http://41.87.71.62:5885/IntliPMSWebService/IntliPMSWebService?WSDL" uri="xml-resources/web-service-references/IntliPMSWebService/wsdl/41.87.71.62_5885/IntliPMSWebService/IntliPMSWebService.wsdl"/>
+    <system systemId="http://41.87.71.62:5885/IntliPMSWebService/IntliPMSWebService?xsd=1" uri="xml-resources/web-service-references/IntliPMSWebService/wsdl/41.87.71.62_5885/IntliPMSWebService/IntliPMSWebService.xsd_1.xsd"/>
+</catalog>

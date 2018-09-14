@@ -1,0 +1,434 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.1-b419 (branches/2.3.1.x-7937; 2014-08-04T08:11:03+0000) JAXWS-RI/2.2.10-b140803.1500 JAXWS-API/2.2.11 JAXB-RI/2.2.10-b140802.1033 JAXB-API/2.2.12-b140109.1041 svn-revision#unknown. --><xs:schema xmlns:tns="http://services.intlipms.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://services.intlipms.com/">
+
+<xs:element name="company" type="tns:company"/>
+
+<xs:element name="companyCustomer" type="tns:companyCustomer"/>
+
+<xs:element name="companyPrivileges" type="tns:companyPrivileges"/>
+
+<xs:element name="companyRommRate" type="tns:companyRommRate"/>
+
+<xs:element name="customer" type="tns:customer"/>
+
+<xs:element name="customerPrivileges" type="tns:customerPrivileges"/>
+
+<xs:element name="customerRoomRate" type="tns:customerRoomRate"/>
+
+<xs:element name="maintAproval" type="tns:maintAproval"/>
+
+<xs:element name="maintCosting" type="tns:maintCosting"/>
+
+<xs:element name="maintFunds" type="tns:maintFunds"/>
+
+<xs:element name="maintRequest" type="tns:maintRequest"/>
+
+<xs:element name="uploadCompany" type="tns:uploadCompany"/>
+
+<xs:element name="uploadCompanyPrivileges" type="tns:uploadCompanyPrivileges"/>
+
+<xs:element name="uploadCompanyPrivilegesResponse" type="tns:uploadCompanyPrivilegesResponse"/>
+
+<xs:element name="uploadCompanyResponse" type="tns:uploadCompanyResponse"/>
+
+<xs:element name="uploadCompanyRoomRate" type="tns:uploadCompanyRoomRate"/>
+
+<xs:element name="uploadCompanyRoomRateResponse" type="tns:uploadCompanyRoomRateResponse"/>
+
+<xs:element name="uploadCompanyStaff" type="tns:uploadCompanyStaff"/>
+
+<xs:element name="uploadCompanyStaffResponse" type="tns:uploadCompanyStaffResponse"/>
+
+<xs:element name="uploadCustomer" type="tns:uploadCustomer"/>
+
+<xs:element name="uploadCustomerPrivileges" type="tns:uploadCustomerPrivileges"/>
+
+<xs:element name="uploadCustomerPrivilegesResponse" type="tns:uploadCustomerPrivilegesResponse"/>
+
+<xs:element name="uploadCustomerResponse" type="tns:uploadCustomerResponse"/>
+
+<xs:element name="uploadCustomerRoomRate" type="tns:uploadCustomerRoomRate"/>
+
+<xs:element name="uploadCustomerRoomRateResponse" type="tns:uploadCustomerRoomRateResponse"/>
+
+<xs:element name="uploadMaintenanceCosting" type="tns:uploadMaintenanceCosting"/>
+
+<xs:element name="uploadMaintenanceCostingResponse" type="tns:uploadMaintenanceCostingResponse"/>
+
+<xs:element name="uploadMaintenanceFunds" type="tns:uploadMaintenanceFunds"/>
+
+<xs:element name="uploadMaintenanceFundsResponse" type="tns:uploadMaintenanceFundsResponse"/>
+
+<xs:element name="uploadMaintenanceRequest" type="tns:uploadMaintenanceRequest"/>
+
+<xs:element name="uploadMaintenanceRequestApproval" type="tns:uploadMaintenanceRequestApproval"/>
+
+<xs:element name="uploadMaintenanceRequestApprovalResponse" type="tns:uploadMaintenanceRequestApprovalResponse"/>
+
+<xs:element name="uploadMaintenanceRequestResponse" type="tns:uploadMaintenanceRequestResponse"/>
+
+<xs:complexType name="uploadCustomerPrivileges">
+<xs:sequence>
+<xs:element name="privilege" type="tns:customerPrivileges" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="customerPrivileges">
+<xs:sequence>
+<xs:element name="createdBy" type="xs:string" minOccurs="0"/>
+<xs:element name="customer" type="xs:string" minOccurs="0"/>
+<xs:element name="dateCreated" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="dateUpdated" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="globalId" type="xs:string" minOccurs="0"/>
+<xs:element name="hotelAmentity" type="xs:string" minOccurs="0"/>
+<xs:element name="hotelId" type="xs:string" minOccurs="0"/>
+<xs:element name="memo" type="xs:string" minOccurs="0"/>
+<xs:element name="pid" type="xs:int" minOccurs="0"/>
+<xs:element name="replicationStatus" type="xs:boolean" minOccurs="0"/>
+<xs:element name="updatedBy" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="uploadCustomerPrivilegesResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="uploadCompanyPrivileges">
+<xs:sequence>
+<xs:element name="privilege" type="tns:companyPrivileges" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="companyPrivileges">
+<xs:sequence>
+<xs:element name="company" type="xs:string" minOccurs="0"/>
+<xs:element name="createdBy" type="xs:string" minOccurs="0"/>
+<xs:element name="dateCreated" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="dateUpdated" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="globalId" type="xs:string" minOccurs="0"/>
+<xs:element name="hotelAmentity" type="xs:string" minOccurs="0"/>
+<xs:element name="hotelId" type="xs:string" minOccurs="0"/>
+<xs:element name="memo" type="xs:string" minOccurs="0"/>
+<xs:element name="pid" type="xs:int" minOccurs="0"/>
+<xs:element name="replicationStatus" type="xs:boolean" minOccurs="0"/>
+<xs:element name="updatedBy" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="uploadCompanyPrivilegesResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="uploadMaintenanceCosting">
+<xs:sequence>
+<xs:element name="costing" type="tns:maintCosting" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="maintCosting">
+<xs:sequence>
+<xs:element name="cost" type="xs:string" minOccurs="0"/>
+<xs:element name="costBy" type="xs:string" minOccurs="0"/>
+<xs:element name="costDate" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="costingId" type="xs:int" minOccurs="0"/>
+<xs:element name="createdBy" type="xs:string" minOccurs="0"/>
+<xs:element name="dateCreated" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="dateUpdated" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="fundsReleasedTo" type="xs:string" minOccurs="0"/>
+<xs:element name="globalId" type="xs:string" minOccurs="0"/>
+<xs:element name="hotelId" type="xs:string" minOccurs="0"/>
+<xs:element name="replicationStatus" type="xs:boolean" minOccurs="0"/>
+<xs:element name="requestid" type="xs:int" minOccurs="0"/>
+<xs:element name="status" type="xs:string" minOccurs="0"/>
+<xs:element name="updatedBy" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="uploadMaintenanceCostingResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="uploadCompanyStaff">
+<xs:sequence>
+<xs:element name="customerCompany" type="tns:companyCustomer" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="companyCustomer">
+<xs:sequence>
+<xs:element name="compCustId" type="xs:int" minOccurs="0"/>
+<xs:element name="companyid" type="xs:string" minOccurs="0"/>
+<xs:element name="contactisBooking" type="xs:short" minOccurs="0"/>
+<xs:element name="contactisFandB" type="xs:short" minOccurs="0"/>
+<xs:element name="contactisPayment" type="xs:short" minOccurs="0"/>
+<xs:element name="contactisReport" type="xs:short" minOccurs="0"/>
+<xs:element name="contacttype" type="xs:string" minOccurs="0"/>
+<xs:element name="createdBy" type="xs:string" minOccurs="0"/>
+<xs:element name="customerid" type="xs:string" minOccurs="0"/>
+<xs:element name="dateCreated" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="dateUpdated" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="departmentid" type="xs:string" minOccurs="0"/>
+<xs:element name="employeeId" type="xs:string" minOccurs="0"/>
+<xs:element name="globalId" type="xs:string" minOccurs="0"/>
+<xs:element name="hotelId" type="xs:string" minOccurs="0"/>
+<xs:element name="replicationStatus" type="xs:boolean" minOccurs="0"/>
+<xs:element name="rightsLevel" type="xs:string" minOccurs="0"/>
+<xs:element name="updatedBy" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="uploadCompanyStaffResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="uploadCustomer">
+<xs:sequence>
+<xs:element name="customer" type="tns:customer" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="customer">
+<xs:sequence>
+<xs:element name="createdBy" type="xs:string" minOccurs="0"/>
+<xs:element name="custDOB" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="custaddress" type="xs:string" minOccurs="0"/>
+<xs:element name="custcity" type="xs:string" minOccurs="0"/>
+<xs:element name="custcountry" type="xs:string" minOccurs="0"/>
+<xs:element name="custemail" type="xs:string" minOccurs="0"/>
+<xs:element name="custfirstName" type="xs:string" minOccurs="0"/>
+<xs:element name="custlastname" type="xs:string" minOccurs="0"/>
+<xs:element name="custlistedname" type="xs:string" minOccurs="0"/>
+<xs:element name="customerid" type="xs:int" minOccurs="0"/>
+<xs:element name="custothername" type="xs:string" minOccurs="0"/>
+<xs:element name="custphone1" type="xs:string" minOccurs="0"/>
+<xs:element name="custphone1call" type="xs:short" minOccurs="0"/>
+<xs:element name="custphone1sms" type="xs:short" minOccurs="0"/>
+<xs:element name="custphone1whatsapp" type="xs:short" minOccurs="0"/>
+<xs:element name="custphone2" type="xs:string" minOccurs="0"/>
+<xs:element name="custreligion" type="xs:string" minOccurs="0"/>
+<xs:element name="custsex" type="xs:string" minOccurs="0"/>
+<xs:element name="custstate" type="xs:string" minOccurs="0"/>
+<xs:element name="dateCreated" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="dateUpdated" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="depertmentid" type="xs:string" minOccurs="0"/>
+<xs:element name="employeeId" type="xs:string" minOccurs="0"/>
+<xs:element name="globalId" type="xs:string" minOccurs="0"/>
+<xs:element name="hotelId" type="xs:string" minOccurs="0"/>
+<xs:element name="maxCredit" type="xs:string" minOccurs="0"/>
+<xs:element name="replicationStatus" type="xs:boolean" minOccurs="0"/>
+<xs:element name="updatedBy" type="xs:string" minOccurs="0"/>
+<xs:element name="VIPstatusid" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="uploadCustomerResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="uploadMaintenanceFunds">
+<xs:sequence>
+<xs:element name="fund" type="tns:maintFunds" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="maintFunds">
+<xs:sequence>
+<xs:element name="createdBy" type="xs:string" minOccurs="0"/>
+<xs:element name="dateCreated" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="dateUpdated" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="fundBy" type="xs:string" minOccurs="0"/>
+<xs:element name="fundDate" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="fundId" type="xs:int" minOccurs="0"/>
+<xs:element name="fundSource" type="xs:string" minOccurs="0"/>
+<xs:element name="globalId" type="xs:string" minOccurs="0"/>
+<xs:element name="hotelId" type="xs:string" minOccurs="0"/>
+<xs:element name="replicationStatus" type="xs:boolean" minOccurs="0"/>
+<xs:element name="requestid" type="xs:int" minOccurs="0"/>
+<xs:element name="status" type="xs:string" minOccurs="0"/>
+<xs:element name="updatedBy" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="uploadMaintenanceFundsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="uploadCompanyRoomRate">
+<xs:sequence>
+<xs:element name="roomRate" type="tns:companyRommRate" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="companyRommRate">
+<xs:sequence>
+<xs:element name="approvedby" type="xs:string" minOccurs="0"/>
+<xs:element name="companyid" type="xs:string" minOccurs="0"/>
+<xs:element name="createdBy" type="xs:string" minOccurs="0"/>
+<xs:element name="dateCreated" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="dateUpdated" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="enddate" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="globalId" type="xs:string" minOccurs="0"/>
+<xs:element name="hotelId" type="xs:string" minOccurs="0"/>
+<xs:element name="replicationStatus" type="xs:boolean" minOccurs="0"/>
+<xs:element name="roomrate" type="xs:int" minOccurs="0"/>
+<xs:element name="roomrateguest" type="xs:int" minOccurs="0"/>
+<xs:element name="roomrateid" type="xs:int" minOccurs="0"/>
+<xs:element name="roomtypeid" type="xs:string" minOccurs="0"/>
+<xs:element name="startdate" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="updatedBy" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="uploadCompanyRoomRateResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="uploadCompany">
+<xs:sequence>
+<xs:element name="company" type="tns:company" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="company">
+<xs:sequence>
+<xs:element name="compPhone1" type="xs:string" minOccurs="0"/>
+<xs:element name="compRC" type="xs:string" minOccurs="0"/>
+<xs:element name="compaddress" type="xs:string" minOccurs="0"/>
+<xs:element name="companyid" type="xs:int" minOccurs="0"/>
+<xs:element name="compcity" type="xs:string" minOccurs="0"/>
+<xs:element name="compemail" type="xs:string" minOccurs="0"/>
+<xs:element name="compname" type="xs:string" minOccurs="0"/>
+<xs:element name="compothernames" type="xs:string" minOccurs="0"/>
+<xs:element name="compphone2" type="xs:string" minOccurs="0"/>
+<xs:element name="compreligion" type="xs:string" minOccurs="0"/>
+<xs:element name="comptypeid" type="xs:string" minOccurs="0"/>
+<xs:element name="createdBy" type="xs:string" minOccurs="0"/>
+<xs:element name="custstate" type="xs:string" minOccurs="0"/>
+<xs:element name="dateCreated" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="dateUpdated" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="departmentid" type="xs:string" minOccurs="0"/>
+<xs:element name="employeeid" type="xs:string" minOccurs="0"/>
+<xs:element name="globalId" type="xs:string" minOccurs="0"/>
+<xs:element name="hotelId" type="xs:string" minOccurs="0"/>
+<xs:element name="maxCredit" type="xs:string" minOccurs="0"/>
+<xs:element name="replicationStatus" type="xs:boolean" minOccurs="0"/>
+<xs:element name="updatedBy" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="uploadCompanyResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="uploadMaintenanceRequest">
+<xs:sequence>
+<xs:element name="maintenanceRequest" type="tns:maintRequest" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="maintRequest">
+<xs:sequence>
+<xs:element name="areaid" type="xs:string" minOccurs="0"/>
+<xs:element name="costEsitmate" type="xs:string" minOccurs="0"/>
+<xs:element name="createdBy" type="xs:string" minOccurs="0"/>
+<xs:element name="dateCreated" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="dateUpdated" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="globalId" type="xs:string" minOccurs="0"/>
+<xs:element name="hotelId" type="xs:string" minOccurs="0"/>
+<xs:element name="issueDesc" type="xs:string" minOccurs="0"/>
+<xs:element name="itemdesc" type="xs:string" minOccurs="0"/>
+<xs:element name="itemid" type="xs:string" minOccurs="0"/>
+<xs:element name="replicationStatus" type="xs:boolean" minOccurs="0"/>
+<xs:element name="requestServerity" type="xs:int" minOccurs="0"/>
+<xs:element name="requestby" type="xs:string" minOccurs="0"/>
+<xs:element name="requestdate" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="requestfixdate" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="requestid" type="xs:int" minOccurs="0"/>
+<xs:element name="status" type="xs:string" minOccurs="0"/>
+<xs:element name="updatedBy" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="uploadMaintenanceRequestResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="uploadCustomerRoomRate">
+<xs:sequence>
+<xs:element name="roomRate" type="tns:customerRoomRate" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="customerRoomRate">
+<xs:sequence>
+<xs:element name="approvedby" type="xs:string" minOccurs="0"/>
+<xs:element name="createdBy" type="xs:string" minOccurs="0"/>
+<xs:element name="customerid" type="xs:string" minOccurs="0"/>
+<xs:element name="dateCreated" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="dateUpdated" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="enddate" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="globalId" type="xs:string" minOccurs="0"/>
+<xs:element name="hotelId" type="xs:string" minOccurs="0"/>
+<xs:element name="replicationStatus" type="xs:boolean" minOccurs="0"/>
+<xs:element name="roomrate" type="xs:int" minOccurs="0"/>
+<xs:element name="roomrateguest" type="xs:int" minOccurs="0"/>
+<xs:element name="roomrateid" type="xs:int" minOccurs="0"/>
+<xs:element name="roomtypeid" type="xs:string" minOccurs="0"/>
+<xs:element name="startdate" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="updatedBy" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="uploadCustomerRoomRateResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="uploadMaintenanceRequestApproval">
+<xs:sequence>
+<xs:element name="approval" type="tns:maintAproval" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="maintAproval">
+<xs:sequence>
+<xs:element name="approvalId" type="xs:int" minOccurs="0"/>
+<xs:element name="approvedBy" type="xs:string" minOccurs="0"/>
+<xs:element name="aprovedate" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="createdBy" type="xs:string" minOccurs="0"/>
+<xs:element name="dateCreated" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="dateUpdated" type="xs:dateTime" minOccurs="0"/>
+<xs:element name="fundingSource" type="xs:string" minOccurs="0"/>
+<xs:element name="globalId" type="xs:string" minOccurs="0"/>
+<xs:element name="hotelId" type="xs:string" minOccurs="0"/>
+<xs:element name="replicationStatus" type="xs:boolean" minOccurs="0"/>
+<xs:element name="requestid" type="xs:int" minOccurs="0"/>
+<xs:element name="status" type="xs:string" minOccurs="0"/>
+<xs:element name="updatedBy" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="uploadMaintenanceRequestApprovalResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
