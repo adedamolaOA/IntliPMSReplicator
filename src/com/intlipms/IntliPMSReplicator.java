@@ -35,7 +35,7 @@ public class IntliPMSReplicator {
      * @throws java.lang.InterruptedException
      */
     public static void main(String[] args){
-        // TODO code application logic here
+        // Run Threaded services for upload
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -55,7 +55,9 @@ public class IntliPMSReplicator {
         }).start();
 
     }
-
+    /*
+    Maintenance Request Methods for uploading data from Microsoft SQL Server DB intlipms to webservice
+    */
     public static void maintenanceRequest() {
         System.out.println("Uploading Maintenance Request");
         System.out.println("===================================================================");
@@ -94,7 +96,9 @@ public class IntliPMSReplicator {
         mc.close();
         System.out.println("Maintenance Record Batch Upload Completed\n");
     }
-
+ /*
+    Customer Information Methods for uploading data from Microsoft SQL Server DB intlipms to webservice
+    */
     public static void customer() {
         System.out.println("Uploading Customer Records");
         System.out.println("===================================================================");
@@ -148,7 +152,9 @@ public class IntliPMSReplicator {
         ccc.close();
         System.out.println("Customer Record Batch Upload Completed\n");
     }
-
+ /*
+    Company Information Request Methods for uploading data from Microsoft SQL Server DB intlipms to webservice
+    */
     public static void company() {
         System.out.println("Uploading Company Records");
         System.out.println("===================================================================");
@@ -261,6 +267,8 @@ public class IntliPMSReplicator {
         ccc.close();
         System.out.println("Customer Room Rate Record Batch Upload Completed\n");
     }
+     
+   
 
     private static Boolean uploadMaintenanceRequest(com.intlipms.ws.MaintRequest maintenanceRequest) {
         com.intlipms.ws.IntliPMSWebService_Service service = new com.intlipms.ws.IntliPMSWebService_Service();
