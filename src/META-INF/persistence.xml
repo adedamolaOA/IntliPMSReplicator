@@ -79,10 +79,10 @@
     <class>com.intlipms.entities.RefactorLog</class>
     <class>com.intlipms.entities.Sysdiagrams</class>
     <properties>
-      <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://192.168.0.254:1433;databaseName=IntliPMS"/>
-      <property name="javax.persistence.jdbc.user" value="keycard"/>
+      <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://xxx.xxx.xxx.xxx:1433;databaseName=IntliPMS"/>
+      <property name="javax.persistence.jdbc.user" value="xxxx"/>
       <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
-      <property name="javax.persistence.jdbc.password" value="admin"/>
+      <property name="javax.persistence.jdbc.password" value="xxxx"/>
     </properties>
   </persistence-unit>
 </persistence>
