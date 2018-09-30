@@ -26,8 +26,8 @@ public class MaintenanceController {
         factory = Persistence.createEntityManagerFactory(PERSISTENCE_UNIT_NAME);
         em = factory.createEntityManager();
         // read the existing entries and write to console
-        Query q = em.createQuery("SELECT m FROM MaintRequest m WHERE m.replicationStatus = :replicationStatus");
-        q.setParameter(PARAMETER, false);
+        Query q = em.createNamedQuery("MaintRequest.findByReplicationStatus").setParameter(PARAMETER, false);;
+        
         List<MaintRequest> requestList = q.getResultList();
         
         return requestList;

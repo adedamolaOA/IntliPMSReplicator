@@ -25,8 +25,7 @@ public class CustomerRoomRateController {
         factory = Persistence.createEntityManagerFactory(PERSISTENCE_UNIT_NAME);
         em = factory.createEntityManager();
         // read the existing entries and write to console
-        Query q = em.createQuery("SELECT c FROM Customerroomrate c WHERE c.replicationStatus = :replicationStatus");
-        q.setParameter(PARAMETER, false);
+        Query q = em.createNamedQuery("Customerroomrate.findByReplicationStatus").setParameter(PARAMETER, false);
         List<Customerroomrate> requestList = q.getResultList();
         //em.close();
         return requestList;

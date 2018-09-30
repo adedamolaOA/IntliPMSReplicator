@@ -27,8 +27,8 @@ public class CustomerController {
         factory = Persistence.createEntityManagerFactory(PERSISTENCE_UNIT_NAME);
         em = factory.createEntityManager();
         // read the existing entries and write to console
-        Query q = em.createQuery("SELECT c FROM Customer c WHERE c.replicationStatus = :replicationStatus");
-        q.setParameter(PARAMETER, false);
+        Query q = em.createNamedQuery("Company.findByReplicationStatus").setParameter(PARAMETER, false);
+        
         List<Customer> requestList = q.getResultList();
        
         return requestList;
